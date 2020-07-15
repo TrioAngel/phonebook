@@ -56,24 +56,40 @@ if(Input::exists()){
 }
 
 ?>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../Css/style.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="container">
+	<form action="" method="post">
+		<div class="field">
+			<label for="username">Username</label>
+			<input type="text" name="username" id="username" value="<?php echo escape(Input::get('username')); ?>" autocomplete="off">
+		</div>
+		<div class="field">
+			<label for="password_again">Password</label>
+			<input type="password" name="password" id="password">
+		</div>
+		<div class="field">
+			<label for="password_again">Password again</label>
+			<input type="password" name="password_again" id="password_again">
+		</div>
+		<div class="field">
+			<label for="name">Name</label>
+			<input type="text" name="name" value="<?php echo escape(Input::get('name')); ?>" id="name">
+		</div>
+		<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+		<input type="submit" value="Register" class="button">
+	</form>
+</div>
 
-<form action="" method="post">
-  <div class="field">
-    <label for="username">Username</label>
-    <input type="text" name="username" id="username" value="<?php echo escape(Input::get('username')); ?>" autocomplete="off">
-  </div>
-  <div class="field">
-    <label for="password_again">Password</label>
-    <input type="password" name="password" id="password">
-  </div>
-  <div class="field">
-    <label for="password_again">Enter your password again</label>
-    <input type="password" name="password_again" id="password_again">
-  </div>
-  <div class="field">
-    <label for="name">Enter your name</label>
-    <input type="text" name="name" value="<?php echo escape(Input::get('name')); ?>" id="name">
-  </div>
-	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-  <input type="submit" value="Register">
-</form>
+</body>
+</html>
+
