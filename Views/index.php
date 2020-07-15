@@ -22,16 +22,19 @@ $user = new User();
 if($user->isLoggedIn()){
   ?>
 	<div class="container">
-		<p><a href="profile.php?user=<?php echo escape($user->data()->username); ?>">Hello <mark><?php echo escape($user->data()->username); ?></mark>!!!</a></p>
-		<ul>
-			<li><a href="logout.php">Log Out</a></li>
-			<li><a href="update.php">Update</a></li>
-			<li><a href="changepassword.php">Change Password</a></li>
-		</ul>
+		<div id="menu">
+			<p>Hello <b><?php echo escape($user->data()->username); ?></b> !!!</p>
+			<ul>
+				<li><a href="profile.php?user=<?php echo escape($user->data()->username); ?>">Profile</a></li>
+				<li><a href="logout.php">Log Out</a></li>
+				<li><a href="update.php">Update</a></li>
+				<li><a href="changepassword.php">Change Password</a></li>
+			</ul>
+		</div>
 
   <?php
   if($user->hasPermission('admin')){
-    echo '<p>You are an administrator!</p></div>';
+    echo '<p id="admin">You are an Administrator!</p></div>';
   } else{
   	echo '</div>';
   }

@@ -58,7 +58,39 @@
 	background-color: #D1F0F0;
 }
 
+.container #menu {
+	font-size: 17px;
+	margin-top: 10%;
+}
+
+.container #menu p{
+	margin-bottom: 5%;
+}
+
+.container #menu ul li {
+	list-style: none;
+	margin-bottom: 2%;
+}
+
+.container #menu ul li a{
+	text-decoration: none;
+	color: rgb(104, 104, 104);
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.container #menu ul li a:hover{
+	color: black;
+}
+
+#admin {
+	margin-top: 10%;
+	color: crimson;
+}
+
+/*404 error*/
 #sorry{
 	margin: 20% auto;
 	text-align: center;
 }
+
