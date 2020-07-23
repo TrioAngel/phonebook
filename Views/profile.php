@@ -29,6 +29,8 @@ if(!$username = Input::get('user')){
 
 	<main>
 		<h3><a href="addnumber.php">Adding Number</a></h3>
+
+
 	</main>
 
 	<footer>
