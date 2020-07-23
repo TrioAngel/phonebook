@@ -47,7 +47,6 @@
 
 .button {
 	margin-top: 5px;
-	width: 75px;
 	padding: 5px;
 	background-color: azure;
 	border-radius: 3px;
@@ -86,6 +85,27 @@
 #admin {
 	margin-top: 10%;
 	color: crimson;
+}
+/*Profile*/
+header {
+	width: 100%;
+	background-color: azure;
+	text-align: center;
+	padding: 15px 10px;
+}
+
+main{
+	padding: 8%;
+}
+
+footer {
+	width: 100%;
+	background-color: azure;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	position: fixed;
+	bottom: 0;
 }
 
 /*404 error*/

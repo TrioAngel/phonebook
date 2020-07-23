@@ -12,7 +12,29 @@ if(!$username = Input::get('user')){
     $data = $user->data();
   }
   ?>
-  <h3><?php echo escape($data->username);?></h3>
-  <p><?php echo escape($data->name)?></p>
+	<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../Css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+	<header>
+		<h2>Hello <?php echo escape($data->name);?></h2>
+	</header>
+
+	<main>
+		<h3><a href="addnumber.php">Adding Number</a></h3>
+	</main>
+
+	<footer>
+		<p>With love by RedAngel</p>
+	</footer>
+	</body>
+	</html>
 <?php
 }
