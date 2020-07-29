@@ -64,11 +64,11 @@ if(Input::exists()){
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../Css/style.css">
+	<link rel="stylesheet" href="../Css/style.css">
   <title>Document</title>
 </head>
 <body>
-<div>
+<div class="container">
   <form action="" method="post">
     <div class="field">
       <label for="surename">Name</label>
@@ -90,5 +90,6 @@ if(Input::exists()){
     <input type="hidden" name="token" value="<?php echo Token::generate();?>">
   </form>
 </div>
+
 </body>
 </html>

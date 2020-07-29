@@ -6,6 +6,7 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../Css/style.css">
+
 	<title>Document</title>
 </head>
 <body>
@@ -25,7 +26,7 @@ if($user->isLoggedIn()){
 		<div id="menu">
 			<p>Hello <b><?php echo escape($user->data()->username); ?></b> !!!</p>
 			<ul>
-				<li><a href="profile.php?user=<?php echo escape($user->data()->username); ?>">Profile</a></li>
+				<li><a href="profile.php?user=<?php echo escape($user->data()->id); ?>">Profile</a></li>
 				<li><a href="logout.php">Log Out</a></li>
 				<li><a href="update.php">Update</a></li>
 				<li><a href="changepassword.php">Change Password</a></li>
@@ -34,7 +35,7 @@ if($user->isLoggedIn()){
 
   <?php
   if($user->hasPermission('admin')){
-    echo '<p id="admin">You are an Administrator!</p></div>';
+    echo '<p>You are an Administrator!</p></div>';
   } else{
   	echo '</div>';
   }
@@ -45,7 +46,6 @@ if($user->isLoggedIn()){
 				</div>";
 }
 ?>
-
 </body>
 </html>
 

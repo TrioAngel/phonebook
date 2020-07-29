@@ -9,7 +9,7 @@
 	<title>Document</title>
 </head>
 <body>
-<div>
+<div class="container">
 	<h3 id="sorry">Ooooops, that page can not be found soryyyyyyy!!!!</h3>
 </div>
 </body>

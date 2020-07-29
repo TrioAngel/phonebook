@@ -1,0 +1,33 @@
+
+header {
+	width: 100%;
+	background-color: darkgray;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+main{
+	padding: 8%;
+	text-align: center;
+}
+
+.container h3 button a {
+	text-decoration: none;
+	color: white;
+	padding: 4px;
+}
+
+.container h3 button {
+	margin-bottom: 10px;
+}
+
+footer {
+	width: 100%;
+	background-color: darkgray;
+	text-align: center;
+	padding: 5px 3px;
+	font-size: 14px;
+	position: fixed;
+	bottom: 0;
+}
