@@ -11,13 +11,13 @@ if(!$conn){
 
 //Create DB and Select it
 
-$sql = "CREATE DATABASE IF NOT EXISTS somewhere";
+$sql = "CREATE DATABASE IF NOT EXISTS phonebook";
 
 if(!mysqli_query($conn, $sql)){
   echo ("Error Creating Database".mysqli_error($conn));
 }
 
-$db_selected = mysqli_select_db($conn, 'somewhere' );
+$db_selected = mysqli_select_db($conn, 'phonebook' );
 if (!$db_selected) {
   die ('Не удалось выбрать базу foo: ' . mysqli_error());
 }
