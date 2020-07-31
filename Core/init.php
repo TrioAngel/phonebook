@@ -1,5 +1,5 @@
 <?php
-  require_once 'sql_adding.php';
+  require_once '../logs/sql_adding.php';
 
 session_start();
 
