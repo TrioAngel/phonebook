@@ -34,6 +34,15 @@
 	margin-top: 15%;
 }
 
+.container form p a{
+	color: black;
+}
+
+.container form p a:hover {
+	color: gray;
+	text-decoration: none;
+}
+
 .container form .field {
 	padding: 5px 0;
 }

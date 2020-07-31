@@ -55,6 +55,7 @@
 					<input type="checkbox" id="remember" name="remember"> Remember me!
 				</label>
 			</div>
+			<p>You can <a href="register.php">Register !!!</a></p>
 
 			<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 			<input type="submit" value="Log in!!!" class="button">

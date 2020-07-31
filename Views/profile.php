@@ -23,11 +23,16 @@ if(!$username = Input::get('user')){
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="../Css/profie.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		<title>Document</title>
 	</head>
 	<body>
 	<header>
-		<h2><i><?php echo escape($data->name);?>`s Profile</i></h2>
+		<div class="container">
+			<a href="index.php"><i class='fas'>&#xf060;</i>  <span>Back to Menu</span></a>
+			<span id="logout"><a href="logout.php"><i class='fas fa-door-open'></i> Log Out</a></span>
+			<h2><i><?php echo escape($data->name);?>`s Profile</i></h2>
+		</div>
 	</header>
 
 	<main>

@@ -8,7 +8,7 @@ $GLOBALS['config'] = array(
     'host' => '127.0.0.1',
     'username' => 'root',
     'password' => '',
-    'db' => 'phonebook' //enter db name like sql_adding.php file
+    'db' => 'phone_book' //enter db name like sql_adding.php file
   ),
   'remember' => array(
     'cookie_name' => 'hash',

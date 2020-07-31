@@ -50,7 +50,7 @@ if(Input::exists()){
 
 		} else {
       foreach ($validation->errors() as $error) {
-        echo $error, '<br>';
+        echo $error;
       }
 		}
 	}
