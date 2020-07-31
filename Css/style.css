@@ -9,10 +9,10 @@
 	margin: 5% auto 0;
 	width: 40%;
 	height: 400px;
-	background-color: darkgray;
+	background-color: #4782F0;
 	border: 1px solid #ccc;
 	border-radius: 20px;
-	box-shadow: 4px 6px rgba(193,193,193, 0.5);
+	box-shadow: 4px 6px rgba(111,40,226, 0.25);
 	color: white;
 }
 
@@ -23,11 +23,11 @@
 }
 
 .container #begin a {
-	color: black;
+	color: white;
 }
 
 .container #begin a:hover {
-	color: rgb(104, 104, 104);
+	color: #520695;
 }
 
 .container form {
@@ -35,11 +35,11 @@
 }
 
 .container form p a{
-	color: black;
+	color: white;
 }
 
 .container form p a:hover {
-	color: gray;
+	color: #520695;
 	text-decoration: none;
 }
 
@@ -53,11 +53,11 @@
 
 .container .backArrow a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .container .backArrow a:hover {
-	color: rgb(104, 104, 104);
+	color: #520695;
 }
 
 .container form .field label {
@@ -71,7 +71,7 @@
 .button {
 	margin-top: 5px;
 	padding: 10px;
-	background-color: darkgray;
+	background-color: #4782F0;
 	border-radius: 3px;
 	color: white;
 	font-size: 14px;
@@ -79,7 +79,7 @@
 
 .button:hover {
 	cursor: pointer;
-	background-color: gray;
+	background-color: #520695;
 }
 
 .container #menu {
@@ -98,18 +98,18 @@
 
 .container #menu ul li a{
 	text-decoration: none;
-	color: rgb(104, 104, 104);
+	color: #520695;
 	font-weight: bold;
 	font-size: 18px;
 }
 
 .container #menu ul li a:hover{
-	color: black;
+	color: white;
 }
 
 #admin {
 	margin-top: 10%;
-	color: crimson;
+	color: #520695;
 }
 
 

@@ -19,11 +19,13 @@
         if($login){
           Redirect::to('index.php');
         }else {
-          echo '<p>Sorry, logging in failed.</p>';
+          echo "<p style='text-align: center;'>Sorry, logging in failed.</p>";
         }
       }else{
         foreach ($validation->errors() as $error) {
-          echo $error, '<br>';
+          echo "
+          <p style='text-align: center'>$error</p>
+        ";
         }
       }
     }

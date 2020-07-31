@@ -6,6 +6,7 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../Css/style.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 	<title>Document</title>
 </head>
@@ -26,10 +27,10 @@ if($user->isLoggedIn()){
 		<div id="menu">
 			<p>Hello <b><?php echo escape($user->data()->username); ?></b> !!!</p>
 			<ul>
-				<li><a href="profile.php?user=<?php echo escape($user->data()->id); ?>">Profile</a></li>
-				<li><a href="logout.php">Log Out</a></li>
-				<li><a href="update.php">Update</a></li>
-				<li><a href="changepassword.php">Change Password</a></li>
+				<li><a href="profile.php?user=<?php echo escape($user->data()->id); ?>"><i class='fas fa-address-card'></i> Profile</a></li>
+				<li><a href="logout.php"><i class='fas fa-door-open'></i> Log Out</a></li>
+				<li><a href="update.php"><i class='fas fa-edit'></i> Update</a></li>
+				<li><a href="changepassword.php"><i class='fas fa-wrench'></i> Change Password</a></li>
 			</ul>
 		</div>
 

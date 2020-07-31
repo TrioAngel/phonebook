@@ -42,7 +42,9 @@ if (Input::exists()){
       }
     }else {
       foreach ($validation->errors() as $error){
-        echo $error, '<br>';
+        echo "
+          <p style='text-align: center'>$error</p>
+        ";
       }
     }
 

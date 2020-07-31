@@ -1,23 +1,24 @@
 
 header {
 	width: 100%;
-	background-color: darkgray;
+	background-color: #4782F0;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
 header h2 {
 	text-align: center;
+	color: #520695;
 }
 
 header .container a{
-	color: black;
+	color: white;
 	padding: 10px;
 	text-decoration: none;
 }
 
 header .container a:hover {
-	color: gray;
+	color: #520695;
 }
 
 main{
@@ -31,6 +32,11 @@ main{
 	padding: 4px;
 }
 
+.container h3 button a:hover {
+	text-decoration: none;
+	color: #520695;
+}
+
 .container h3 button {
 	margin-bottom: 10px;
 }
@@ -38,7 +44,7 @@ main{
 footer {
 	color: white;
 	width: 100%;
-	background-color: darkgray;
+	background-color: #4782F0;
 	text-align: center;
 	padding: 5px 3px;
 	font-size: 14px;
