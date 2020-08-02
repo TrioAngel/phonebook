@@ -9,6 +9,6 @@ With this code you can `
 6. update your name 
 7. change yout password
 
-<img src="https://ibb.co/ftfVn5R" >
-<br>
-<img src="https://ibb.co/ftfVn5R.png" alt="Image">
+<img src="https://i.ibb.co/J2VWy4L/firstPNG.png">
+<hr>
+<img src="https://i.ibb.co/dLxdpbD/second-PNG.png">
