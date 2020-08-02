@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Droid Sans Mono Dotted";
+}
 
 header {
 	width: 100%;
@@ -8,7 +13,7 @@ header {
 
 header h2 {
 	text-align: center;
-	color: #520695;
+	color: #454d55;
 }
 
 header .container a{
@@ -26,19 +31,15 @@ main{
 	text-align: center;
 }
 
-.container h3 button a {
+.container h3 a {
 	text-decoration: none;
 	color: white;
 	padding: 4px;
 }
 
-.container h3 button a:hover {
+.link {
 	text-decoration: none;
-	color: #520695;
-}
-
-.container h3 button {
-	margin-bottom: 10px;
+	color: white;
 }
 
 footer {

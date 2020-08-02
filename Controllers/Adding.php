@@ -33,17 +33,25 @@ class Adding {
 						<td>' . $name . '</td>
 						<td>' . $phone . '</td>
 						<td>' . $address . '</td>
-						<td>' . $email . '</td>
-						
-						
+						<td>' . $email . '</td>						
+						<td><a href="updatenumber.php?id=' . $id . '" class="link"><button class="btn btn-primary">Update</button></a></td>
+            <td><a href="deletenumber.php?id=' . $id . '" class="link"><button class="btn btn-primary">Delete</button></a></td>
+					</tr>
         ';
       };
     } else {
       echo '
         <tr>
-          <td colspan="5">No results</td>
+          <td colspan="6">No results</td>
         </tr>
       ';
     }
   }
+
+  public function delete($id){
+    if(!$this->_db->delete('phonebook', array('id', '=', $id))){
+      throw new Exception('There was a problem.');
+    }
+  }
+
 }

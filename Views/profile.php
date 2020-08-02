@@ -31,13 +31,13 @@ if(!$username = Input::get('user')){
 		<div class="container">
 			<a href="index.php"><i class='fas'>&#xf060;</i>  <span>Back to Menu</span></a>
 			<span id="logout"><a href="logout.php"><i class='fas fa-door-open'></i> Log Out</a></span>
-			<h2><i><?php echo escape($data->name);?>`s Profile</i></h2>
+			<h2><?php echo escape($data->name);?>`s Profile</h2>
 		</div>
 	</header>
 
 	<main>
 		<div class="container">
-			<h3 align="right"><button class="btn btn-dark"><a href="addnumber.php">Adding Number</a></button></h3>
+			<h3 align="right"><a href="addnumber.php"><button class="btn btn-dark">Adding Number</button></a></h3>
 
 				<table class="table table-dark table-hover table-bordered" width="100%">
 					<thead>
@@ -46,6 +46,8 @@ if(!$username = Input::get('user')){
 						<th scope="col">Number</th>
 						<th scope="col">Address</th>
 						<th scope="col">Email</th>
+						<th scope="col">Update</th>
+						<th scope="col">Delete</th>
 					</tr>
 					</thead>
 					<tbody>
