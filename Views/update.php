@@ -30,8 +30,7 @@ if (Input::exists()){
 	    } catch(Exception $e){
 				die($e->getMessage());
 	    }
-    }
-    else {
+    } else {
       foreach ($validation->errors() as $error) {
         echo "
           <p style='text-align: center'>$error</p>

@@ -2,8 +2,8 @@
 
 
 class Adding {
-  private $_db,
-          $_data;
+  private $_db;
+
 
   public function __construct() {
     $this->_db = DB::getInstance();
@@ -48,9 +48,25 @@ class Adding {
     }
   }
 
+  public function numberResult($id){
+    $sql = $this->_db->get('phonebook', array('id', '=', $id));
+    if($sql->count()){
+      foreach ($sql->results() as $item) {
+        $array = json_decode(json_encode($item), true);
+        return $array;
+      }
+    }
+  }
+
   public function delete($id){
     if(!$this->_db->delete('phonebook', array('id', '=', $id))){
       throw new Exception('There was a problem.');
+    }
+  }
+
+  public function update($id, $fields){
+    if(!$this->_db->update('phonebook', $id, $fields)){
+      throw new Exception('There was a problem updating.');
     }
   }
 
