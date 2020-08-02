@@ -9,10 +9,10 @@
 	margin: 5% auto 0;
 	width: 40%;
 	height: 400px;
-	background-color: #4782F0;
+	background-color: #007bff;
 	border: 1px solid #ccc;
 	border-radius: 20px;
-	box-shadow: 4px 6px rgba(111,40,226, 0.25);
+	box-shadow: 4px 6px rgba(0,123,255, 0.25);
 	color: white;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .container #begin a:hover {
-	color: #520695;
+	color: #454d55;
 }
 
 .container form {
@@ -39,7 +39,7 @@
 }
 
 .container form p a:hover {
-	color: #520695;
+	color: #454d55;
 	text-decoration: none;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .container .backArrow a:hover {
-	color: #520695;
+	color: #454d55;
 }
 
 .container form .field label {
@@ -79,7 +79,7 @@
 
 .button:hover {
 	cursor: pointer;
-	background-color: #520695;
+	background-color: #454d55;
 }
 
 .container #menu {
@@ -98,7 +98,7 @@
 
 .container #menu ul li a{
 	text-decoration: none;
-	color: #520695;
+	color: #454d55;
 	font-weight: bold;
 	font-size: 18px;
 }
@@ -109,7 +109,7 @@
 
 #admin {
 	margin-top: 10%;
-	color: #520695;
+	color: #454d55;
 }
 
 
