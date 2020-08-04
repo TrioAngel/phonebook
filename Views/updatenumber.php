@@ -1,7 +1,6 @@
 <?php
 
 require_once '../Core/init.php';
-require_once '../Core/Router.php';
 
 $user = new User;
 $adding = new Adding();

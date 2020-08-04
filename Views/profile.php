@@ -1,6 +1,5 @@
 <?php
 require_once '../Core/init.php';
-require_once '../Core/Router.php';
 
 
 if(!$username = Input::get('user')){

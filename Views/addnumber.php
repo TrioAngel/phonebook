@@ -1,6 +1,5 @@
 <?php
 require_once '../Core/init.php';
-require_once '../Core/Router.php';
 
 if(Input::exists()){
 	if(Token::check(Input::get('token'))){
